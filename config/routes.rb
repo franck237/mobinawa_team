@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   root to: 'sectors#index'
 
   resources :admins do
-  	resources :compagnies
+  	resources :compagnies do
+  		resources :products
+  	end
   end
 
   resources :sectors do
