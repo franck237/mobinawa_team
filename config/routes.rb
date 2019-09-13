@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   devise_for :admins
   root to: 'sectors#index'
 
+resources :countries
+
   resources :admins do
   	resources :compagnies do
   		resources :products
