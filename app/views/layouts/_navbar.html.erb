@@ -1,0 +1,78 @@
+ <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg navbar--bold navbar-light bg-default ">
+        <div class="container navbar-container">
+            <!-- Brand/Logo -->
+                        <%= image_tag ('mobilogo') %>
+                        
+            
+            
+                <!-- Navbar toggler  -->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <!-- Navbar search - For small resolutions -->
+    
+
+    <!-- End Navbar search - For small resolutions -->
+
+    <ul class="navbar-nav ml-lg-auto">
+       <li class="nav-item active">
+            <a href="#serv" class="nav-link text-primary">Fonctionnalités</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link text-primary">Options</a>
+        </li>
+        <li class="nav-item">
+            <a href="#reachus" class="nav-link text-primary">Contacts</a>
+        </li>  
+    </ul>
+</div>
+
+<div class=" d-none d-lg-inline-block d-xl-inline-block">
+    <ul class="navbar-nav ml-auto">
+    		<% if user_signed_in? %>
+    <li>
+      <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+    </li>
+
+    <li>
+      Voici ton email : <%= current_user.email %>
+    </li>
+
+    <br>
+
+    <li>
+      <%= link_to "Edit email / password", edit_user_registration_path %>
+    </li>
+
+  <% else %>
+    <li>    
+      <%= link_to "Connection", new_user_session_path, class: "btn btn-warning h-5 mt-3 mb-3
+         font-weight-bold text-capitalize"  %>
+    </li>
+
+        </end>
+  </ul>
+
+  <% end %>
+        
+
+        
+
+        <!-- Slidebar -->
+    
+    </ul>
+        </div>
+
+       
+    </nav>
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/66959b10c2.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
