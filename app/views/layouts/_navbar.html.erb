@@ -32,24 +32,24 @@
 
 <div class=" d-none d-lg-inline-block d-xl-inline-block">
     <ul class="navbar-nav ml-auto">
-    		<% if user_signed_in? %>
+    		<% if admin_signed_in? %>
     <li>
-      <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+      <%= link_to "Sign out", destroy_admin_session_path, method: :delete %>
     </li>
 
     <li>
-      Voici ton email : <%= current_user.email %>
+      Voici ton email : <%= current_admin.email %>
     </li>
 
     <br>
 
     <li>
-      <%= link_to "Edit email / password", edit_user_registration_path %>
+      <%= link_to "Edit email / password", edit_admin_registration_path %>
     </li>
 
   <% else %>
     <li>    
-      <%= link_to "Connection", new_user_session_path, class: "btn btn-warning h-5 mt-3 mb-3
+      <%= link_to "Connection", new_admin_session_path, class: "btn btn-warning h-5 mt-3 mb-3
          font-weight-bold text-capitalize"  %>
     </li>
 
