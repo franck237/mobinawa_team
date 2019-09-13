@@ -14,37 +14,50 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
-//= require jquery.min.js
-//= require popper.min.js
-//= require bootstrap.min.js
-//= require slidebar.js
-//= require classie.js
-//= require bootstrap-growl.min.js
-//= require scrollpos-styler.js
-//= require adaptive-backgrounds.js
-//= require jquery.countdown.min.js
-//= require dropzone.min.js
-//= require jquery.easypiechart.min.js
-//= require jquery.fancybox.min.js
-//= require flatpickr.min.js
-//= require flip.min.js
-//= require footer-reveal.min.js
-//= require jquery.gradientify.min.js
-//= require jquery.headroom.min.js
-//= require input-mask.min.js
-//= require instafeed.js
-//= require jquery.countTo.js
-//= require nouislider.min.js
-//= require paraxify.min.js
-//= require select2.min.js
-//= require sticky-kit.min.js
-//= require swiper.min.js
-//= require autosize.min.js
-//= require typeahead.bundle.min.js
-//= require typed.min.js
-//= require vide.min.js
-//= require viewportchecker.min.js
-//= require wow.min.js
-//= require isotope.min.js
-//= require imagesloaded.pkgd.min.js
-//= 
+
+// Add of Javascript used by Boomerang
+//
+// <!-- Core -->
+//= require jquery/jquery.min
+//= require popper/popper.min
+//= require bootstrap/js/bootstrap.min
+//= require slidebar/slidebar
+//= require classie
+//= require revolution/revolution-slider-1
+//
+// <!-- Bootstrap Extensions -->
+//= require bootstrap-notify/bootstrap-growl.min
+//= require scrollpos-styler/scrollpos-styler
+//
+// <!-- Plugins: Sorted A-Z -->
+//= require adaptive-backgrounds/adaptive-backgrounds
+//= require countdown/js/jquery.countdown.min
+//= require dropzone/dropzone.min
+//= require easy-pie-chart/jquery.easypiechart.min
+//= require fancybox/js/jquery.fancybox.min
+//= require flatpickr/flatpickr.min
+//= require flip/flip.min
+//= require footer-reveal/footer-reveal.min
+//= require gradientify/jquery.gradientify.min
+//= require headroom/headroom.min
+//= require headroom/jquery.headroom.min
+//= require input-mask/input-mask.min
+//= require instafeed/instafeed
+//= require milestone-counter/jquery.countTo
+//= require nouislider/js/nouislider.min
+//= require paraxify/paraxify.min
+//= require select2/js/select2.min
+//= require sticky-kit/sticky-kit.min
+//= require swiper/js/swiper.min
+//= require textarea-autosize/autosize.min
+//= require typeahead/typeahead.bundle.min
+//= require typed/typed.min
+//= require vide/vide.min
+//= require viewport-checker/viewportchecker.min
+//= require wow/wow.min
+// <!-- Isotope -->
+//= require isotope/isotope.min
+//= require imagesloaded/imagesloaded.pkgd.min
+//
+// <!-- App JS -->
+//= require boomerang.min
