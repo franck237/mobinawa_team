@@ -14,7 +14,7 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
-//
+
 // Add of Javascript used by Boomerang
 //
 // <!-- Core -->
@@ -55,11 +55,9 @@
 //= require vide/vide.min
 //= require viewport-checker/viewportchecker.min
 //= require wow/wow.min
-//
 // <!-- Isotope -->
 //= require isotope/isotope.min
 //= require imagesloaded/imagesloaded.pkgd.min
 //
 // <!-- App JS -->
 //= require boomerang.min
-
