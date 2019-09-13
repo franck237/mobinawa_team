@@ -74,5 +74,5 @@ gem 'activerecord-reset-pk-sequence'
 
 gem 'table_print'
 gem 'dotenv-rails'
-
+gem 'font-awesome-rails'
 gem 'friendly_id'
