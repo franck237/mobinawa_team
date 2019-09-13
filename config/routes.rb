@@ -2,22 +2,17 @@ Rails.application.routes.draw do
   devise_for :admins
   root to: 'sectors#index'
 
-
-
   resources :admins do
-  	resources :companies do
-  		resources :products
-  	end
+    resources :companies
+    resources :products
+    get '/dashboard', to: 'admins#dashboard', as: 'dashboard'
   end
 
-  resources :countries do
-    resources :sectors do
-  	 resources :sub_sectors do
-  	  resources :companies do
-  	 	resources :products
-  	  end
-  	 end
-    end
-  end
+  resources :countries 
+  resources :sectors 
+  resources :sub_sectors 
+  resources :companies
+  resources :products
+  	  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
