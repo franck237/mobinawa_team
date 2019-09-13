@@ -3,6 +3,17 @@ Rails.application.routes.draw do
   root to: 'homes#index'
 
   resources :admins do
+    resources :companies
+    resources :products
+    get '/dashboard', to: 'admins#dashboard', as: 'dashboard'
+  end
+
+  resources :countries 
+  resources :sectors 
+  resources :sub_sectors 
+  resources :companies
+  resources :products
+  	  
   	resources :companies do
   		resources :products
   	end
