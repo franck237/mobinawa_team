@@ -1,6 +1,7 @@
 class AdminsController < ApplicationController
- before_action :filter_on_signed_in, only: [:show]
- before_action :only_your_profile_page, only: [:show]
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_admin!, only: [:show]
+  before_action :only_your_profile_page, only: [:show]
 
   def index
     @admins = Admin.all

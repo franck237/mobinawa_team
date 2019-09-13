@@ -39,7 +39,8 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="fas fa-user"></i></span>
                     </div>
-                    <%= f.select :country, options_from_collection_for_select(Country.all,:id, :name)%>
+
+                        <%= f.collection_select :country_id, Country.all, :id, :name ,class: "form-control form-control-label"%>
                  </div>
               </div>
 
