@@ -82,6 +82,4 @@ gem 'friendly_id'
 # Font awesome
 gem 'font-awesome-rails'
 
-# Help for the precompile in Production
-gem 'sprockets-rails'
 gem 'jquery-rails'
