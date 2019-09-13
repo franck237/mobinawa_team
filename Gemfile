@@ -73,5 +73,6 @@ gem 'faker'
 gem 'activerecord-reset-pk-sequence'
 
 gem 'table_print'
+gem 'dotenv-rails'
 
 gem 'friendly_id'
