@@ -31,19 +31,19 @@ Country.reset_pk_sequence
 # Creation of 12 sectors
 	i = 0
 	4.times do
-	sector = Sector.create!(name: Faker::Company.industry + (i+1).to_s, icon: "flags/figma/icon-school.svg")
+	sector = Sector.create!(name: Faker::Company.industry + (i+1).to_s, icon: "icons/figma/icon-school.svg")
 	i =+ 1
 	end
 
 	i = 4
 	4.times do
-	sector = Sector.create!(name: Faker::Company.industry + (i+1).to_s, icon: "flags/figma/icon-build.svg")
+	sector = Sector.create!(name: Faker::Company.industry + (i+1).to_s, icon: "icons/figma/icon-build.svg")
 	i =+ 1
 	end
 
 	i = 8
 	4.times do
-	sector = Sector.create!(name: Faker::Commerce.department(max: 4) + (i+1).to_s, icon: "flags/figma/icon-health.svg")
+	sector = Sector.create!(name: Faker::Commerce.department(max: 4) + (i+1).to_s, icon: "icons/figma/icon-health.svg")
 	i =+ 1
 	end
 
