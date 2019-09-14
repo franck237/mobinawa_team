@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  get 'homes/index'
   devise_for :admins
-  root to: 'sectors#index'
+  root to: 'homes#index'
 
   resources :admins do
   	resources :companies do
