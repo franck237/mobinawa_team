@@ -18,7 +18,6 @@ Rails.application.routes.draw do
   	resources :companies do
   		resources :products
   	end
-  end
 
   resources :sectors do
   	resources :sub_sectors do
